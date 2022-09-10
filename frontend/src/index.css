@@ -1,8 +1,23 @@
 
 /* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-  --link-color: #8e2ad6;
+  --link-color: #BA2C73;
+  --font: 'Poppins', sans-serif;
+  --color-dark: #191D32;
+  --color-gray: #282F44;
+  --color-white: #FFFBFE;
+}
+
+body {
+  margin: 0 30px;
+  font-family: var(--font);
+  background: var(--color-dark);
+}
+
+h1,h2,h3,h4 {
+  font-weight: 500;
 }
 
 .App {
@@ -16,5 +31,7 @@
 
 a {
   text-decoration: none;
-  color: var();
+  color: var(--link-color);
+  border-bottom: 1px solid;
 }
+
