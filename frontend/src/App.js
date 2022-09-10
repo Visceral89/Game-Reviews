@@ -14,20 +14,17 @@ function App() {
   return (
 
   <Router>
-    <Routes>
     <div className="App">
       <SiteHeader />
-          <Route exact path="/">
-            <HomePage />
+        <Routes>
+          <Route exact path="/" element={<HomePage />}>
           </Route>
-          <Route path="/details/:id">
-            <ReviewPage />
+          <Route path="/details/:id" element={<ReviewPage />}>
           </Route>
-          <Route path="/category/:id">
-            <CategoryPage />
+          <Route path="/category/:id" element={<CategoryPage />}>
           </Route>
+        </Routes>
     </div>
-    </Routes>
     </Router>
   );
 }
