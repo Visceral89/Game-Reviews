@@ -1,0 +1,11 @@
+query GetData {
+  reviews {
+    data{
+      id, attributes{
+        title,
+        rating,
+        body
+      }
+    }
+  }
+}
