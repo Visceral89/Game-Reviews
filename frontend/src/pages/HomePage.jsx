@@ -29,6 +29,17 @@ const { loading, error, data } = useQuery(REVIEWS)
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error</p>
 
+  /* 
+  
+  Ok allow me to think alout here for a minute.
+  The div returns "data" the return value from the useQuery, then after that we look at the 
+  gql query. data is just the whole thing, then reviews and then data AGAIN since its Strapi v4.
+  
+  Got that wrong and didnt understand why we acessed the same data twice.
+  Then after that we can just get a value with simple dotnotation like review.attributes.rating and so on!
+  
+  */
+
   return (
     <div>
       {data.reviews.data.map((review) => (
