@@ -21,7 +21,7 @@ function App() {
   return (
 
   <Router>
-    <ApolloProvider>
+    <ApolloProvider client={ client }>
       <div className="App">
         <SiteHeader />
           <Routes>
