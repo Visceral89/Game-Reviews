@@ -8,6 +8,7 @@
   --color-dark: #191D32;
   --color-gray: #282F44;
   --color-white: #FFFBFE;
+  --box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.3);
 }
 
 /* Globals */

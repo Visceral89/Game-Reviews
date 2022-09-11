@@ -1,0 +1,30 @@
+.review-card {
+    background: var(--color-gray);
+    margin: 60px auto;
+    padding: 1px 20px 20px 90px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.review-card .rating{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background: var(--link-color);
+    font-size: 3em;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.review-card h2 {
+    margin-bottom: 0;
+}
+.review-card small{
+    margin-right: 10px;
+    color: #777;
+}
