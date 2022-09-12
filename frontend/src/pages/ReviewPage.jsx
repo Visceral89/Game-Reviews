@@ -42,9 +42,7 @@ export default function ReviewPage() {
     <div className="review-card">
       <div className="rating">{data.review.data.attributes.rating}</div>
       <h2>{data.review.data.attributes.title}</h2>
-
       <small>console list</small>
-      <img src={data.review.data.attributes.picture.data.attributes} alt="" />
       <p>{data.review.data.attributes.body}</p>
     </div>
   )
