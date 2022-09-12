@@ -11,7 +11,14 @@ const REVIEW = gql`
         attributes {
           title,
           rating,
-          body
+          body,
+          picture {
+            data {
+            attributes {
+              formats:url
+            }
+            }
+          }
         }
       }
     }

@@ -15,6 +15,13 @@ const REVIEWS = gql`
           title
           rating
           body
+          picture {
+            data {
+              attributes {
+                formats: url
+              }
+            }
+          }
         }
       }
     }
@@ -28,6 +35,8 @@ const { loading, error, data } = useQuery(REVIEWS)
 // Replace this later with real components
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error</p>
+
+console.log(data)
 
   /* 
   
