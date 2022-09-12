@@ -35,8 +35,8 @@ export default function ReviewPage() {
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error</p>
+
   
-  console.log(data)
 
   return (
     <div className="review-card">
@@ -44,7 +44,7 @@ export default function ReviewPage() {
       <h2>{data.review.data.attributes.title}</h2>
 
       <small>console list</small>
-
+      <img src={data.review.data.attributes.picture.data.attributes} alt="" />
       <p>{data.review.data.attributes.body}</p>
     </div>
   )
