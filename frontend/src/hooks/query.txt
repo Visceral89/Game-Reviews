@@ -1,10 +1,18 @@
 query GetData {
   reviews {
-    data{
-      id, attributes{
-        title,
-        rating,
+    data {
+      id
+      attributes {
+        title
+        rating
         body
+        picture {
+          data {
+            attributes {
+              formats: url
+            }
+          }
+        }
       }
     }
   }
